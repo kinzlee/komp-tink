@@ -1,0 +1,40 @@
+// main button
+.big-button {
+    background-color: $btn-color;
+    border: none;
+    border-bottom: .7rem solid darken($btn-color, 10%);
+    color: #fff;
+    font-weight: bold;
+    font-size: $large-size;
+    margin-bottom: $medium-size;
+    width: 100%;
+    padding: 2.2rem;
+    box-shadow: 0 1rem 3rem rgba(#000, .40);
+
+    &:disabled {
+        opacity: .7;
+    }
+}
+
+@media (min-width) {
+    .big-button {
+        margin-bottom: $xtralarge-size
+    }
+}
+
+// normal button
+.button {
+    background: $btn-color;
+    border: none;
+    border-bottom: .4rem solid darken($btn-color, 10%);
+    color: #fff;
+    font-weight: 500;
+    padding: $small-size;
+
+    &--link {
+        background:none;
+        border: none;
+        color: $off-white;
+        padding: 0;
+    }
+}

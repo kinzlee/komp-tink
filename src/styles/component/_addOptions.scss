@@ -1,0 +1,33 @@
+// add option
+
+.add-option {
+    display: flex;
+    padding: medium-size;
+
+    &-error {
+        color: red;
+        font-style: italic;
+        margin: $medium-size 000;
+        padding: 0 $medium-size;
+    }
+
+    &__input {
+        background-color: $dark-blue;
+        border: none;
+        border-bottom: .3rem solid darken($dark-blue, 10%);
+        color: $off-white;
+        flex-grow: 1;
+        margin-right: $small-size;
+        padding: $small-size;
+    }
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .add-option{
+        flex-direction: row;
+
+        &__input {
+            margin: 0 $small-size 0 0;
+        }
+    }
+}
